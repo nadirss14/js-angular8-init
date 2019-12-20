@@ -1,0 +1,12 @@
+<div class="product__title">
+  <strong>
+    {{ product.title }}
+  </strong>
+</div>
+<img [src]="product.image" [alt]="product.title" />
+<div class="product__footer">
+  <button (click)="addCart(product.title)" class="product__button">
+    Add to cart
+  </button>
+  <strong> Price:</strong><span>{{ product.price }} {{ product.moneda }} </span>
+</div>

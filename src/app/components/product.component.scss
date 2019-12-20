@@ -1,0 +1,43 @@
+$fondo-gradiente: radial-gradient(
+  circle farthest-corner at 10% 20%,
+  rgba(233, 14, 14, 1) 0%,
+  rgba(63, 47, 47, 1) 90%
+);
+
+img {
+  padding-bottom: 50px;
+  width: 260px;
+  height: 200px;
+  object-fit: contain;
+  margin: 10px;
+  //border: 1px solid red;
+}
+
+.product__title {
+  width: 280px;
+  height: 50px;
+  border-radius: 4px 4px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  text-transform: uppercase;
+  color: white;
+  background-image: $fondo-gradiente;
+}
+
+.product__footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.product__button {
+  border: none;
+  width: 100px;
+  height: 25px;
+  border-radius: 3px;
+  padding: 3px 5px 3px 5px;
+  color: white;
+  font-weight: bold;
+  background-image: $fondo-gradiente;
+}
