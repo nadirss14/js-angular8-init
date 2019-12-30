@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { IProduct } from "./components/products/product.model";
+import { IProduct } from "./components/product/product.model";
 
 @Component({
   selector: "app-root",
@@ -17,7 +17,8 @@ export class AppComponent {
       title: "Camiseta",
       price: 320.0,
       description: "bla bla bla bla bla",
-      moneda: "COR"
+      moneda: "COR",
+      date: new Date()
     },
     {
       id: "3",
@@ -25,7 +26,8 @@ export class AppComponent {
       title: "Mug",
       price: 90.0,
       description: "bla bla bla bla bla",
-      moneda: "COR"
+      moneda: "COR",
+      date: new Date()
     },
     {
       id: "4",
@@ -33,7 +35,8 @@ export class AppComponent {
       title: "Pin",
       price: 120.0,
       description: "bla bla bla bla bla",
-      moneda: "COR"
+      moneda: "COR",
+      date: new Date()
     },
     {
       id: "5",
@@ -41,7 +44,8 @@ export class AppComponent {
       title: "Stickers",
       price: 35.0,
       description: "bla bla bla bla bla",
-      moneda: "COR"
+      moneda: "COR",
+      date: new Date()
     },
     {
       id: "6",
@@ -49,9 +53,11 @@ export class AppComponent {
       title: "Stickers",
       price: 50.0,
       description: "bla bla bla bla bla",
-      moneda: "COR"
+      moneda: "COR",
+      date: new Date()
     }
   ];
+
   addItems() {
     this.items.push(this.title);
   }
