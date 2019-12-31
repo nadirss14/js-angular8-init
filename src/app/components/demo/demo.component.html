@@ -1,0 +1,17 @@
+{{ "Titulo" }}
+
+<input id="txItem" type="text" [(ngModel)]="title" />
+
+<div *ngIf="title === 'nadir'">
+  Este es un Div
+</div>
+<button (click)="addItems()">add</button>
+<ul>
+  <li *ngIf="items.length === 0">
+    La lista esta vacia
+  </li>
+  <li *ngFor="let name of items; index as i">
+    {{ name }} {{ i }}
+    <button (click)="deleteItems(i)">delete</button>
+  </li>
+</ul>

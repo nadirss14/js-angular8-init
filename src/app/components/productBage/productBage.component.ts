@@ -1,11 +1,11 @@
 import { Component, Input, Output, EventEmitter } from "@angular/core";
-import { IProduct } from "./product.model";
+import { IProduct } from "./productBage.model";
 @Component({
   selector: "app-product",
-  templateUrl: "./product.component.html",
-  styleUrls: ["./product.component.scss"]
+  templateUrl: "./productBage.component.html",
+  styleUrls: ["./productBage.component.scss"]
 })
-export class ProductComponent {
+export class ProductBageComponent {
   @Input() product: IProduct;
   @Output() productClicked: EventEmitter<any> = new EventEmitter();
 
